@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Crear Usuario - TaskManager PRO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="../css/estilos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">TaskManager PRO</a>
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="../usuarios/index.html">Usuarios</a></li>
+      <li class="nav-item"><a class="nav-link" href="../tareas/index.html">Tareas</a></li>
+      <li class="nav-item"><a class="nav-link" href="../subtareas/index.html">Subtareas</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container mt-5">
+  <h2 class="mb-4 text-center">Registrar Nuevo Usuario</h2>
+
+  <form>
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control is-invalid" id="nombre" name="nombre" placeholder="Ej: Ana Gómez">
+      <div class="invalid-feedback">El nombre es obligatorio.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control is-invalid" id="email" name="email" placeholder="usuario@mail.com">
+      <div class="invalid-feedback">Debes ingresar un email válido.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control is-invalid" id="password" name="password" placeholder="••••••••">
+      <div class="invalid-feedback">La contraseña debe tener al menos 6 caracteres.</div>
+    </div>
+
+    <div class="text-end">
+      <button type="submit" class="btn btn-success">Guardar Usuario</button>
+      <a href="index.html" class="btn btn-secondary">Cancelar</a>
+    </div>
+  </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
